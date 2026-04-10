@@ -109,17 +109,89 @@ This signals that cross-selling protective services (security, backup, tech supp
 
 > Customers with more subscribed services show significantly lower churn, highlighting the importance of increasing product adoption to improve customer retention.
 ---
-**4. Internet Technology Disparity**
-Fiber optic customers churn at **41.9%** — over twice the 19% DSL churn rate — despite paying ~$91/month average. High price sensitivity and elevated expectations drive dissatisfaction in this premium segment.
 
-**5. The Danger Zone Matrix (Contract × Payment Method)**
+### 4. Internet Technology Disparity
+
+Fiber optic customers churn at **41.9%** — over twice the 19% DSL churn rate — despite paying ~$91/month on average. This suggests high price sensitivity and elevated expectations in this premium segment, leading to increased dissatisfaction.
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/0bb22474-4568-422d-8af4-c27084005dde" width="100%"/>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/6a44bbf5-f5b5-40e2-aad2-b12df2848d2c" width="100%"/>
+    </td>
+  </tr>
+</table>
+
+> Fiber optic customers represent a high-value but high-risk segment, indicating a need for improved service quality, pricing strategies, and targeted retention efforts.
+---
+
+
+### 5. The Danger Zone Matrix (Contract × Payment Method)
+
 The most dangerous customer profile: Month-to-month contract + Electronic Check payment = **53.7% churn rate**. By contrast, two-year contract + credit card auto-pay = **2.2% churn**. Electronic check customers re-evaluate every month, making them inherently high-risk.
 
-**6. Revenue at Risk**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e492f74a-de8e-4971-9759-fc7129d91c3a" width="80%"/>
+</p>
+
+| Contract         | Bank Transfer (Auto) | Credit Card (Auto) | Electronic Check | Mailed Check |
+|------------------|---------------------|--------------------|------------------|--------------|
+| Month-to-Month   | 34.13%              | 32.78%             | **53.73%**       | 31.58%       |
+| One Year         | 9.72%               | 10.30%             | 18.44%           | 6.85%        |
+| Two Year         | 3.38%               | 2.24%              | 7.70%            | **0.8%**     |
+
+> The combination of short-term contracts and non-automated payment methods significantly increases churn risk. Encouraging long-term contracts and auto-pay adoption can drastically improve customer retention.
+---
+
+
+### 6. Revenue at Risk
+
 High-risk customers (month-to-month + fiber optic + electronic check, still active) represent a concentrated pocket of revenue exposure that can be directly targeted with retention campaigns.
 
-**7. Tenure-Churn Relationship**
-A KDE analysis reveals a sharp spike in churn among customers in their **first 12 months**, with churn probability declining steadily with tenure. Retaining customers past the 24-month mark dramatically increases lifetime value.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5a24ff32-19ea-4663-ae4c-4383cf3bbff7" width="75%"/>
+</p>
+
+**High-Risk Segment Definition**
+
+| Condition                             | Meaning                       | Why risky                                                 |
+|--------------------------------------|-------------------------------|----------------------------------------------------------|
+| `Churn == 'No'`                      | Customer has **not left yet** | We want to identify customers who **may leave in future** |
+| `Contract == 'Month-to-month'`       | No long-term commitment       | These customers can leave **anytime**                     |
+| `InternetService == 'Fiber optic'`   | High price service            | Expensive services often show **higher churn**            |
+| `PaymentMethod == 'Electronic check'`| Payment through e-check       | Historically **highest churn segment**                    |
+
+---
+
+### 📊 Revenue Risk Summary
+
+| Metric | Value |
+|--------|------|
+| **High-Risk Customers Remaining** | 518 |
+| **Monthly Revenue at Risk** | $45,666.60 |
+| **Annual Revenue Exposure** | $547,999.20 |
+| **Total Company Monthly Revenue** | $316,530.15 |
+| **% Revenue in Danger Zone** | **14.43%** |
+
+> 🚨 **Alert:** Nearly **15% of total revenue** is concentrated in high-risk customers, representing a significant opportunity for targeted retention strategies and proactive intervention.
+---
+
+
+### 7. Tenure–Churn Relationship
+
+A KDE analysis reveals a sharp spike in churn among customers in their **first 12 months**, with churn probability declining steadily as tenure increases. Retaining customers beyond the 24-month mark significantly improves lifetime value.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4daed412-2277-4085-a0af-94f246683aa2" width="65%"/>
+</p>
+
+> Early-stage customers (0–12 months) represent the highest churn risk, highlighting the critical importance of onboarding experience and early engagement strategies.
+---
+
+
 
 ### Visualizations Produced
 
