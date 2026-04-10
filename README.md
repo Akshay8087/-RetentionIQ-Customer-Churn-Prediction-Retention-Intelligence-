@@ -7,6 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)](https://opensource.org/licenses/MIT)
 
 ---
+🚀 **Live Demo:** https://telechurnintelligence.netlify.app/
 
 ## 🧭 Project Overview
 
