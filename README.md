@@ -361,8 +361,14 @@ telechurn-intelligence/
 ├── partner_churn_analysis.png            # Saved visualization: Partner vs Churn
 ├── family_structure_churn.png            # Saved visualization: Family structure vs Churn
 │
+├── Reports/
+│   ├── EDA_Report.pdf                  # Detailed analysis of data, insights, visualizations
+│   ├── Model_Building_Report.pdf       # Model selection, tuning, evaluation, SHAP insights
+│   ├── Final_Project_Report.pdf        # Complete end-to-end summary (business + technical)
+|
 ├── requirements.txt                      # Python package dependencies
 └── README.md                             # Project documentation (this file)
+
 ```
 
 ---
